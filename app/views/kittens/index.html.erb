@@ -1,0 +1,11 @@
+<h1>Kittens#index</h1>
+<p>Find me in app/views/kittens/index.html.erb</p>
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+<% @kittens.each do |kitten| %>
+  <p>Kitten ID: <%= kitten.id %></p>
+  <p>Kitten Name: <%= kitten.name %></p>
+  <p>Kitten Cuteness: <%= kitten.cuteness %></p>
+  <p>Kitten Softness: <%= kitten.softness%></p>
+<% end %>

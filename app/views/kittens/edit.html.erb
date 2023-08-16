@@ -1,0 +1,4 @@
+<h1>Kittens#edit</h1>
+<p>Find me in app/views/kittens/edit.html.erb</p>
+<%= render 'form' %>
+<%= link_to "Delete Kitten", kitten_path(@kitten),  data: { turbo_method: "delete" } %>

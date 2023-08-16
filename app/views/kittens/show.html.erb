@@ -1,0 +1,13 @@
+<h1>Kittens#show</h1>
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+<p>Find me in app/views/kittens/show.html.erb</p>
+<div>
+  <p>Kitten ID: <%= @kitten.id %></p>
+  <p>Kitten Name: <%= @kitten.name %></p>
+   <p>Kitten Age: <%= @kitten.age %></p>
+  <p>Kitten Cuteness: <%= @kitten.cuteness %></p>
+  <p>Kitten Softness: <%= @kitten.softness%></p>
+</div>
+<%= link_to "Delete Kitten", kitten_path(@kitten),  data: { turbo_method: "delete" } %>
